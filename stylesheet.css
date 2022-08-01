@@ -1,0 +1,127 @@
+/* Style the navbar */
+body{
+    background-color: burlywood;
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+  box-sizing: border-box;
+  }
+  
+  .bg-image1 {
+  /* Full height */
+  height: 200%;
+  
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+  .bg-image2 {
+      /* Full height */
+      height: 100%;
+      
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+  
+  /* Images used */
+  
+  .img2 { background-image: url("nailpic2.jpeg"); }
+
+
+
+
+
+  .player-text {
+    text-align: left;
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-family: 'Games', sans-serif;
+  
+    
+  }
+  .computer-text {
+    text-align: left;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 45px;
+    font-family: 'Games', sans-serif;
+  
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#navbar {
+    overflow: hidden;
+    background-color: white;
+  }
+
+.logo{
+  max-width: 10%;  
+  height: auto;  
+  display: block; 
+}
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display:block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
