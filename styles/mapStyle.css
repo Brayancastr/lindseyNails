@@ -1,0 +1,20 @@
+/********************* Maps API ******************************/
+.mapTitle {
+    text-align: center;
+}
+
+#map {
+    height: 700px;
+    width: 100%;
+}
+
+.location-details {
+    width: 150px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+.name {
+    text-decoration: underline;
+}

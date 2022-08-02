@@ -32,7 +32,7 @@
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
+.sticky+.content {
   padding-top: 60px;
 }
 
@@ -57,7 +57,8 @@ body {
 }
 
 .img-cont:hover {
-  transform: scale(1.25); /* (125% zoom) */
+  transform: scale(1.25);
+  /* (125% zoom) */
 }
 
 /********* For Booking Page ***************/
@@ -116,4 +117,18 @@ body {
 
 .input-group-text {
   height: 3rem;
+}
+
+/******* Bootstrap Navbar *************/
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
 }
