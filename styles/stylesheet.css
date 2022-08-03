@@ -87,12 +87,12 @@ body, html {
     .top-text1 {
       text-align: left;
       position: absolute;
-      top: 115%;
+      top: 117%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
       font-size: 500px;
-      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-family:Arial, Helvetica, sans-serif;
     
       
     }
