@@ -30,7 +30,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
 
   <!-- Appointment Picker -->
-  <link rel="stylesheet" href="./node_modules/appointment-picker/dist/appointment-picker.css" />
+  <link rel="stylesheet" href="../node_modules/appointment-picker/dist/appointment-picker.css" />
 
   <!-- My Stylesheet -->
   <link rel="stylesheet" href="../styles/style.css" />
@@ -38,7 +38,7 @@
   <title>Booking Page </title>
 </head>
 
-<body>
+<body class="bookingBody">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="./index.html"><img class="logo" src="../images/logosmall.png" /></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -54,7 +54,7 @@
           <a class="nav-link" href="products.html">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="booking.html">Booking</a>
+          <a class="active nav-link" href="booking.html">Booking</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="location.html">Location</a>
@@ -63,111 +63,205 @@
     </div>
   </nav>
 
-  <div class="row booking-container mx-auto">
-    <div class="container-time col-lg-6">
-      <h2 class="heading">Hour of Operation</h2>
-      <h3 class="heading-days">Monday-Friday</h3>
-      <p>9 AM - 5 PM</p>
-
-      <h3 class="heading-days">Saturday</h3>
-      <p>9 AM - 3 PM</p>
-      <br />
-      <hr />
-
-      <h4 class="heading-phone">Call Us: (123) 456 - 7890</h4>
+  <div class="content">
+    <div class="booking-heading">
+      <h2>Book an Appointment!</h2>
     </div>
 
-    <div class="container-form col-lg-6">
-      <form action="#">
-        <h2 class="heading-form">
-          <i class="fa-solid fa-calendar"></i> Reservation
-        </h2>
+    <div class="row booking-container mx-auto">
+      <div class="container-time col-lg-6 my-auto mx-auto">
+        <h2 class="heading">Hour of Operation</h2>
+        <h3 class="heading-days">Monday-Friday</h3>
+        <p>9 AM - 5 PM</p>
 
-        <!-- Name -->
-        <div class="form-group">
-          <label for="name" class="form-label">Your Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Your Name" required />
-        </div>
+        <h3 class="heading-days">Saturday</h3>
+        <p>9 AM - 3 PM</p>
+        <br />
+        <hr />
 
-        <!-- Email -->
-        <div class="form-group">
-          <label for="email" class="form-label">Your Email </label>
-          <div class="input-group">
-            <span class="input-group-append">
-              <span class="input-group-text bg-white">
-                <i class="fa-solid fa-envelope fa-1px"></i>
-              </span>
-            </span>
-            <input type="email" class="form-control" id="email" placeholder="Your Email" required />
+        <h4 class="heading-phone">Call Us: (123) 456 - 7890</h4>
+      </div>
+
+      <div class="container-form col-lg-6">
+        <form action="#">
+          <h2 class="heading-form">
+            <i class="fa-solid fa-calendar"></i> Reservation
+          </h2>
+
+          <!-- Name -->
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required />
           </div>
-        </div>
 
-        <!-- Phone Number -->
-        <div class="form-group">
-          <label for="phone" class="form-label">Phone Number: </label>
-          <input type="tel" class="form-control" id="phone" name="visitorPhone" placeholder="(123) 456-7890"
-            pattern="((\d{3})\s?\s?(\d{3})-?\s?(\d{4})" required />
-        </div>
-
-        <!-- Services -->
-        <div class="form-group">
-          <label for="selection" class="form-label">Choose Service</label>
-          <select class="form-select" aria-label="Default select example" required>
-            <option selected>Choose Desired Service</option>
-            <option value="1">Basic Manicure</option>
-            <option value="2">French Manicure</option>
-            <option value="3">Press-On Manicure</option>
-          </select>
-        </div>
-
-        <!-- Date -->
-        <div class="row">
-          <div class="form-group col-lg-6">
-            <label for="date" class="form-label">Date</label>
-            <div class="input-group date" id="datepicker">
-              <input type="text" class="form-control" placeholder="Choose Date" />
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email" class="form-label">Your Email </label>
+            <div class="input-group">
               <span class="input-group-append">
                 <span class="input-group-text bg-white">
-                  <i class="fa fa-calendar"></i>
+                  <i class="fa-solid fa-envelope fa-1px"></i>
                 </span>
               </span>
+              <input type="email" class="form-control" id="email" placeholder="Your Email" required />
             </div>
           </div>
 
-          <!-- Time -->
-          <div class="form-grup col-lg-6">
-            <div class="time">
-              <label for="time-form" class="form-label mt-3">Time</label>
-              <input id="time-form" class="form-control" type="text" name="time-form" value="" placeholder="Choose Time"
-                aria-live="assertive" autocomplete="off" aria-label="Use up or down arrow keys to change time"
-                required />
+          <!-- Phone Number -->
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone Number: </label>
+            <input type="tel" class="form-control" id="phone" name="visitorPhone" placeholder="(123) 456-7890"
+              pattern="((\d{3})\s?\s?(\d{3})-?\s?(\d{4})" required />
+          </div>
+
+          <!-- Services -->
+          <div class="form-group">
+            <label for="selection" class="form-label">Choose Service</label>
+            <select class="form-select" aria-label="Default select example" required>
+              <option selected>Choose Desired Service</option>
+              <option value="1">Basic Manicure</option>
+              <option value="2">French Manicure</option>
+              <option value="3">Press-On Manicure</option>
+            </select>
+          </div>
+
+          <!-- Date -->
+          <div class="row">
+            <div class="form-group col-lg-6">
+              <label for="date" class="form-label">Date</label>
+              <div class="input-group date" id="datepicker">
+                <input type="text" class="form-control" placeholder="Choose Date" />
+                <span class="input-group-append">
+                  <span class="input-group-text bg-white">
+                    <i class="fa fa-calendar"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+
+            <!-- Time -->
+            <div class="form-grup col-lg-6">
+              <div class="time">
+                <label for="time-form" class="form-label mt-3">Time</label>
+                <input id="time-form" class="form-control" type="text" name="time-form" value=""
+                  placeholder="Choose Time" aria-live="assertive" autocomplete="off"
+                  aria-label="Use up or down arrow keys to change time" required />
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Comments/Concerns -->
-        <div class="form-group">
-          <label for="comment" class="form-label mt-3">Any Comments/Concerns?</label>
+          <!-- Comments/Concerns -->
+          <div class="form-group">
+            <label for="comment" class="form-label mt-3">Any Comments/Concerns?</label>
 
-          <textarea name="message" class="form-control" id="message" rows="3"
-            placeholder="Tell us anything else that is important to know."></textarea>
-        </div>
+            <textarea name="message" class="form-control" id="message" rows="3"
+              placeholder="Tell us anything else that is important to know."></textarea>
+          </div>
 
-        <!-- Button -->
-        <div class="col-5 mx-auto mt-5">
-          <button class="submit btn btn-outline-dark" type="submit" name="button">
-            <i class="fa-regular fa-paper-plane"></i> Book Appointment!
-          </button>
-        </div>
-      </form>
+          <!-- Button -->
+          <div class="col-5 mx-auto mt-5">
+            <button class="submit btn btn-outline-dark" type="submit" name="button" onclick="formSubmitted()">
+              <i class="fa-regular fa-paper-plane"></i> Book Appointment!
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted text-black">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com" class="me-4 text-reset text-decoration-none" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.twitter.com" class="me-4 text-reset text-decoration-none" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" class="me-4 text-reset text-decoration-none">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section>
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h5 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Lindsey's Nails
+            </h5>
+            <p>
+              Gorgeous nails suited just for you.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="./products.html" class="text-reset text-decoration-none">Products</a>
+            </p>
+            <p>
+              <a href="./booking.html" class="text-reset text-decoration-none">Book Appointment</a>
+            </p>
+            <p>
+              <a href="./location.html" class="text-reset text-decoration-none">Our Location</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fa-solid fa-building me-3"></i> 401 N Tryon St, Charlotte, NC 28202</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              lindseynails@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> (123) 456 - 7890</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright
+      <a class="text-reset fw-bold" href="./index.html">Lindsey Nails</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 
   <!-- Appointment Picker Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.20171210/classList.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="./node_modules/appointment-picker/src/appointment-picker.js"></script>
+  <script src="../node_modules/appointment-picker/src/appointment-picker.js"></script>
 
   <!-- Date Picker Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

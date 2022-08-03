@@ -47,8 +47,8 @@ function initMap() {
         {
             location: charlotte,
             content: `<div class="location-details">
-                <h3 class="name">${name}</h3>
-                <p>301 N Tryon St</p>
+                <h4 class="name">${name}</h4>
+                <p>401 N Tryon St</p>
                 <p>Charlotte, NC 28202</p>
                 </div>`
         },
@@ -56,7 +56,7 @@ function initMap() {
         {
             location: charlotte2,
             content: `<div class="location-details">
-            <h3 class="name">${name}</h3>
+            <h4 class="name">${name}</h4>
             <p>4400 Sharon Rd</p>
             <p>Charlotte, NC 28211</p>
             </div>`

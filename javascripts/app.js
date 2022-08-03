@@ -15,3 +15,6 @@ const appointmentPicker = new AppointmentPicker(
   }
 );
 
+function formSubmitted() {
+  alert("Booking submitted!")
+}

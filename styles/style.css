@@ -4,9 +4,10 @@
 }
 
 .logo {
-  max-width: 10%;
+  max-width: 15%;
   height: auto;
   display: block;
+  padding: 1rem;
 }
 
 /* Navbar links */
@@ -40,8 +41,8 @@ body {
   overflow-x: hidden;
   /* What could you use to center the content in the body easily? */
   justify-items: center;
-  margin: 20px;
-  background-color: burlywood;
+  /* margin: 20px; */
+  /* background-color: burlywood; */
 }
 
 .grid-cont {
@@ -62,17 +63,23 @@ body {
 }
 
 /********* For Booking Page ***************/
-body {
-  font-family: "Roboto", sans-serif;
+.booking-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.bookingBody {
+  font-family: "Ubuntu", sans-serif;
   color: #fff;
   letter-spacing: 1px;
 }
 
 .booking-container {
   background-color: #fafafa;
-  /* margin: 3rem;
-  margin-left: 10rem; */
   box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
 }
 
 .container-time {
@@ -120,10 +127,6 @@ body {
 }
 
 /******* Bootstrap Navbar *************/
-.navbar {
-  padding-bottom: 4.5rem;
-}
-
 .nav-item {
   padding: 0 18px;
 }
@@ -131,4 +134,23 @@ body {
 .nav-link {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.2rem;
+}
+
+.content {
+  background-color: burlywood;
+  border: 3rem solid burlywood;
+
+}
+
+.active {
+  text-decoration: 2px underline burlywood;
+  /* background-color: burlywood; */
+}
+
+.footer-image {
+  width: 20%;
+}
+
+footer {
+  text-align: center;
 }

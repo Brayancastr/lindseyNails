@@ -1,20 +1,35 @@
 /********************* Maps API ******************************/
 .mapTitle {
+    font-family: 'Ubuntu', sans-serif;
     text-align: center;
+    color: white;
+    margin-bottom: 3rem;
 }
 
 #map {
     height: 700px;
-    width: 100%;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 5rem;
 }
 
 .location-details {
     width: 150px;
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
     color: black;
 }
 
 .name {
     text-decoration: underline;
+}
+
+.content {
+    background-color: burlywood;
+}
+
+.bg-light {
+    background-color: burlywood;
 }
