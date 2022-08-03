@@ -60,7 +60,41 @@ body {
 .img-cont:hover {
   transform: scale(1.25);
   /* (125% zoom) */
-}
+      -webkit-filter: brightness(40%);
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+  }
+
+  .hovercap {
+    /* (C1) DIMENSIONS */
+    width: 100%;
+    padding: 20px;
+    font-size: 50px;
+   
+    /* (C2) PLACE AT CENTER */
+    position:absolute;
+    z-index: 1;    
+    left: 50%;
+    top: 40%;
+    margin:-100px 0 0 -100px;  
+    width:200px;  
+    height:200px;  
+
+   
+    /* (C3) COLORS */
+    background-color: transparent;
+    color: black;
+  }
+  .hovercap {
+    visibility: none; opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .img-cont:hover .hovercap {
+    visibility: visible; opacity: 1;
+  }
 
 /********* For Booking Page ***************/
 .booking-heading {

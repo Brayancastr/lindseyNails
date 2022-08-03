@@ -14,59 +14,122 @@ body, html {
   box-sizing: border-box;
   }
   
+  
   .bg-image1 {
-  /* Full height */
-  height: 200%;
-  
-  
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  }
+    /* Full height */
+    height: 80%;
+    
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  .bg-image2 {
-      /* Full height */
-      height: 100%;
+    }
+  
+    .bg-image2 {
+        /* Full height */
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        }
+  
+  
+        .bg-image3 {
+          /* Full height */
+          height: 80%;
+          
+          
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          }
+    
+    /* Images used */
+    
+    .img2 { background-image: url("../images/nailpic2.jpeg"); }
+    .img1 { background-image: url("../images/pink1.png"); }
+    .img3 { background-image: url("../images/pink2.webp"); }
+  
+    .containerdiv { float: left; position: relative; } 
+    .cornerimage { position: absolute; top: 0; right: 0; }
+  
+  
+  
+    .top-text {
+      text-align: left;
+      position: absolute;
+      top: 23%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 220px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
       
-      /* Center and scale the image nicely */
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      }
+    }
+    .bottom-text {
+      text-align: left;
+      position: absolute;
+      top: 60%;
+      left: 32%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 22px;
+      font-family: "Sigmar One";
+    }
   
-  /* Images used */
   
-  .img2 { background-image: url("nailpic2.jpeg"); }
-
-
-
-
-
-  .player-text {
-    text-align: left;
-    position: absolute;
-    top: 15%;
-    left: 12%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 50px;
-    font-family: 'Games', sans-serif;
-  
+    .top-text1 {
+      text-align: left;
+      position: absolute;
+      top: 115%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 500px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
     
-  }
-  .computer-text {
-    text-align: left;
-    position: absolute;
-    top: 35%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 45px;
-    font-family: 'Games', sans-serif;
+      
+    }
+    .bottom-text1 {
+      text-align: left;
+      position: absolute;
+      top: 150%;
+      left: 65%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 20px;
+      font-family: 'Games', sans-serif;
+    }
   
+   
+    .top-text3 {
+      text-align: left;
+      position: absolute;
+      top: 200%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 500px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
     
-  }
+      
+    }
+    .bottom-text3 {
+      text-align: left;
+      position: absolute;
+      top: 230%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 20px;
+      font-family: 'Games', sans-serif;
+    }
 
 
 
